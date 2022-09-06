@@ -1,0 +1,30 @@
+.imgCentral {
+    width: 100%;
+    height: 1490px;
+    background-image: url("../assets/img/PWfondo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    grid-area: inipag;
+}
+.imgCentral .inicio {
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    display: block;
+}
+.medio {
+    color: black;
+    font-size: 70px;
+    font-family: Britannic;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    height: 30%;
+}
