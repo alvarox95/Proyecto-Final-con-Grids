@@ -1,2 +1,2 @@
 # justprintit-Medici
-Proyecto final del curso de desarrollo web de CODERHOUSE
+Proyecto final con SASS del curso de desarrollo web de CODERHOUSE
