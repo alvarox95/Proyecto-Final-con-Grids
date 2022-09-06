@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.img {
+  width: 50%;
+  transition: all 0.3s; }
+  .img:hover {
+    transform: scale(1.2); }
