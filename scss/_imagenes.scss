@@ -1,23 +1,9 @@
 .img {
-  width: 50%;
-  transition: all 0.3s;
-  &:hover {
-    transform: scale(1.2);
-  }
+  @include imgFooter ($hoverScale)
 }
 .rrss {
-  img {
-    width: 40px;
-    height: auto;
-    transition: all 0.3s;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-}
-@media only screen and (max-width: 768px) {
-  .img {
-    width: 200px;
+  img{
+    @include rrssFooter ($hoverScale) 
   }
 }
 /* INICIO HOVER LOGO */

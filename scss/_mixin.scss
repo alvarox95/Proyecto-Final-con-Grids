@@ -1,0 +1,15 @@
+@mixin rrssFooter ($hover) {
+    width: 40px;
+    height: auto;
+    transition: all 0.3s;
+    &:hover {
+    transform: $hover;
+    }
+}
+@mixin imgFooter ($hover) {
+    width: 50%;
+    transition: all 0.3s;
+    &:hover {
+        transform: $hover;
+    }
+}
