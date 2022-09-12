@@ -1,0 +1,39 @@
+.sub{
+    width: map-get($fontSizePor , size10 );
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-area: sub;
+}
+.telasub{
+    width: map-get($fontSizePor , size10 );
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: telasub;
+    align-content: center;
+    align-items: center;
+}
+.sub1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "sub sub"
+      "sub sub"
+      "telasub telasub"
+      "telasub telasub";
+}
+.sub p{
+    width: map-get($fontSizePor , size8 );
+}
+.sub h1, .sub h2{
+    margin: map-get($fontSize , size1 );
+    width: map-get($fontSizePor , size8 );
+}
+.telasub li, .telasub .ts{
+    margin: map-get($fontSize , size1 );
+}
