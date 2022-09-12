@@ -1,5 +1,5 @@
 .imgCentral {
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     height: 1490px;
     background-image: url("../assets/img/PWfondo.png");
     background-size: 100% 100%;
@@ -15,15 +15,15 @@
         margin-top: 0;
         display: block;
         font-size: 50px;
-        width: 100%;
+        width: map-get($fontSizePor , size10 );
     }
 }
 .medio {
     color: black;
-    font-size: 70px;
+    font-size: map-get($fontSize , size7 );
     font-family: Britannic;
     font-weight: bold;
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     text-align: center;
-    height: 30%;
+    height: map-get($fontSizePor , size3 );
 }

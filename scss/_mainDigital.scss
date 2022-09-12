@@ -9,19 +9,19 @@
       "ds car";
 }
 .imgDig { 
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     height: auto;
     grid-area: img; 
 }
 .imgDig {
     img{
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     height: 700px;
 }
 }
 .digTxt {
     @extend .textoDig;
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     grid-area: digTxt;
     h1{
         font-size: 40px;
@@ -33,7 +33,7 @@
 }
 .digTxt 
 .ds { 
-    width: 100%;
+    width: map-get($fontSizePor , size10 );
     grid-area: ds;
 }
 .ds {
@@ -50,7 +50,7 @@
 .car {
     h3{
     font-size: 25px;
-    margin: 10px;
+    margin: map-get($fontSize , size1 );
     font-weight: bold;
     p{
     font-size: 17px;
