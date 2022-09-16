@@ -28,17 +28,17 @@
   .header .logoHeader {
     width: 50%;
     text-align: center; }
-    .header .logoHeader a .imgHead {
-      width: 300px;
+    .header .logoHeader a img {
+      width: 250px;
       height: 150px;
       transition: all 0.3s; }
-      .header .logoHeader a .imgHead:hover {
+      .header .logoHeader a img:hover {
         transform: scale(1.2); }
   .header .navbar {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 50%; }
     .header .navbar p {
       font-size: 30px;
@@ -58,8 +58,6 @@
         .header .navbar .nav-links a:hover {
           color: #f300c6;
           transform: scale(1.1); }
-  .header nav {
-    border-bottom: 8px solid black; }
 
 /*FIN HEADEDR*/
 /* INICIO FOOTER */
@@ -71,28 +69,176 @@
   grid-template-rows: auto;
   grid-template-areas: "logoimg imgdatos dt1 inicio rrss"; }
   .footer .logoimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     grid-area: logoimg; }
     .footer .logoimg a img {
       width: 250px;
-      height: 150px; }
+      height: 150px;
+      transition: all 0.3s; }
+      .footer .logoimg a img:hover {
+        transform: scale(1.2); }
   .footer .imgdatos {
     grid-area: imgdatos;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 5px; }
+    justify-content: space-evenly; }
   .footer .dt1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     grid-area: dt1; }
+    .footer .dt1 a {
+      text-decoration: none; }
   .footer .inicio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     grid-area: inicio; }
+    .footer .inicio nav ul {
+      list-style: none; }
+      .footer .inicio nav ul li {
+        margin-top: 30px; }
+    .footer .inicio a {
+      text-decoration: none; }
   .footer .rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     grid-area: rrss; }
 
+/* FIN FOOTER */
+/* INICIO MEDIA DIGITAL FOOTER */
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 19% 47% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "logoimg logoimg logoimg" "imgdatos dt1 inicio" "imgdatos dt1 inicio" "rrss rrss rrss"; }
+    .footer .imgdatos {
+      grid-area: imgdatos;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap; }
+    .footer .logoimg {
+      grid-area: logoimg;
+      width: 100%;
+      height: auto; }
+      .footer .logoimg a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .footer .logoimg a img {
+          width: 60%; }
+    .footer .inicio {
+      grid-area: inicio;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start; }
+    .footer .rrss {
+      grid-area: rrss;
+      width: 100%;
+      height: auto;
+      align-items: center; }
+      .footer .rrss .imgRrss {
+        width: 50%;
+        text-align: center; }
+    .footer .dt1 {
+      grid-area: dt1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .footer .dt1 p {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: initial; }
+    .footer a {
+      text-decoration: none;
+      color: black; }
+    .footer .inicio li {
+      list-style: none;
+      margin-top: 30%;
+      text-align: center; } }
+
+/* FIN MEDIA DIGITAL FOOTER */
+/* INICIO MEDIA DIGITAL HEADER */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .header .logoHeader {
+      width: 100%; }
+      .header .logoHeader a img {
+        width: 60%;
+        height: 150px;
+        text-align: center; }
+    .header .navbar {
+      width: 100%; }
+      .header .navbar p {
+        margin-right: 0; }
+      .header .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center; }
+        .header .navbar .nav-links li:hover {
+          transform: scale(1.1);
+          color: #f300c6; }
+      .header .navbar .libar {
+        list-style: none;
+        padding: 15px 5px; }
+      .header .navbar a {
+        color: black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold; } }
+
+/* FIN MEDIA DIGITAL HEADER */
+/* INICIO MEDIA DIGITAL */
+@media only screen and (max-width: 768px) {
+  .gridPadre .dig {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "imgDig" "digTxt" "ds" "car"; }
+    .gridPadre .dig .imgDig {
+      width: 100%;
+      grid-area: imgDig; }
+      .gridPadre .dig .imgDig img {
+        width: 100%;
+        height: auto; }
+    .gridPadre .dig .digTxt {
+      grid-area: digTxt; }
+    .gridPadre .dig .ds {
+      grid-area: ds; }
+      .gridPadre .dig .ds h3 {
+        text-align: center; }
+      .gridPadre .dig .ds ul {
+        text-align: center; }
+    .gridPadre .dig .car {
+      grid-area: car; }
+      .gridPadre .dig .car h3 {
+        text-align: center; }
+      .gridPadre .dig .car ul {
+        text-align: center; } }
+
+/* FIN MEDIA DIGITAL */
 .navbar-nav {
   border-bottom: 3px solid black; }
 
