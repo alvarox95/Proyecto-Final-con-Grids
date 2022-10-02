@@ -1,4 +1,4 @@
-.texto, .imgCentral .inicio {
+.texto {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -10,27 +10,6 @@
   flex-wrap: wrap;
   align-items: center; }
 
-.navbar-nav {
-  border-bottom: 3px solid black; }
-
-.nav-item {
-  margin-right: 70px; }
-
-.navbar-collapse {
-  justify-content: flex-end; }
-
-a {
-  color: black; }
-  a:hover {
-    color: #f300c6; }
-
-.gridPadre {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "header header" "inipag inipag" "footer footer"; }
-
-/* INICIO HEADER */
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -73,8 +52,6 @@ a {
           color: #f300c6;
           transform: scale(1.1); }
 
-/*FIN HEADEDR*/
-/* INICIO FOOTER */
 .footer {
   width: 100%;
   grid-area: footer;
@@ -133,134 +110,31 @@ a {
     justify-content: space-evenly;
     grid-area: rrss; }
 
-/* FIN FOOTER */
-/* INICIO MEDIA DIGITAL FOOTER */
-@media only screen and (max-width: 768px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 19% 47% 33%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "logoimg logoimg logoimg" "imgdatos dt1 inicio" "imgdatos dt1 inicio" "rrss rrss rrss"; }
-    .footer .imgdatos {
-      grid-area: imgdatos;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      flex-wrap: wrap; }
-    .footer .logoimg {
-      grid-area: logoimg;
-      width: 100%;
-      height: auto; }
-      .footer .logoimg a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        .footer .logoimg a img {
-          width: 60%; }
-    .footer .inicio {
-      grid-area: inicio;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: flex-start; }
-    .footer .rrss {
-      grid-area: rrss;
-      width: 100%;
-      height: auto;
-      align-items: center; }
-      .footer .rrss .imgRrss {
-        width: 50%;
-        text-align: center; }
-    .footer .dt1 {
-      grid-area: dt1;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-evenly; }
-      .footer .dt1 p {
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        margin-top: initial; }
-    .footer a {
-      text-decoration: none;
-      color: black; }
-    .footer .inicio li {
-      list-style: none;
-      margin-top: 30%;
-      text-align: center; } }
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: #f300c6; }
 
-/* FIN MEDIA DIGITAL FOOTER */
-/* INICIO MEDIA DIGITAL HEADER */
-@media only screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    height: auto; }
-    .header .logoHeader {
-      width: 100%; }
-      .header .logoHeader a img {
-        width: 60%;
-        height: 150px;
-        text-align: center; }
-    .header .navbar {
-      width: 100%;
-      justify-content: center; }
-      .header .navbar p {
-        margin-right: 0; }
-      .header .navbar .nav-links {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center; }
-        .header .navbar .nav-links li:hover {
-          transform: scale(1.1);
-          color: #f300c6; }
-      .header .navbar .libar {
-        list-style: none;
-        padding: 15px 5px; }
-      .header .navbar a {
-        color: black;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold; } }
-
-/* FIN MEDIA DIGITAL HEADER */
-/* INICIO MEDIA DIGITAL */
-@media only screen and (max-width: 768px) {
-  .gridPadre .dig {
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "imgDig" "digTxt" "ds" "car"; }
-    .gridPadre .dig .imgDig {
-      width: 100%;
-      grid-area: imgDig; }
-      .gridPadre .dig .imgDig img {
-        width: 100%;
-        height: auto; }
-    .gridPadre .dig .digTxt {
-      grid-area: digTxt; }
-    .gridPadre .dig .ds {
-      grid-area: ds; }
-      .gridPadre .dig .ds h3 {
-        text-align: center; }
-      .gridPadre .dig .ds ul {
-        text-align: center; }
-    .gridPadre .dig .car {
-      grid-area: car; }
-      .gridPadre .dig .car h3 {
-        text-align: center; }
-      .gridPadre .dig .car ul {
-        text-align: center; } }
-
-/* FIN MEDIA DIGITAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "inipag inipag" "footer footer"; }
+
+ul {
+  list-style-type: none; }
+
+.texcent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5%; }
 
 .img {
   width: 50%;
@@ -336,48 +210,127 @@ a {
   animation-iteration-count: 1; }
 
 /* FIN HOVER LOGO */
-.imgCentral {
-  width: 100%;
-  height: 1490px;
-  background-image: url("../assets/img/PWfondo.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  grid-area: inipag; }
-
-.imgCentral .inicio {
-  margin-top: 0;
-  display: block;
-  font-size: 50px;
-  width: 100%; }
-
-.medio {
-  color: black;
-  font-size: 70px;
-  font-family: Britannic;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-  height: 30%; }
-
 @media only screen and (max-width: 768px) {
-  .img {
-    width: 200px; } }
-
-.carImg img {
-  width: 100%;
-  height: 500px; }
-
-.carousel-item {
-  width: 60%;
-  height: auto; }
-
-.carImg {
-  margin-left: 25%; }
+  /* INICIO FOOTER */
+  .footer {
+    display: grid;
+    grid-template-columns: 19% 47% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "logoimg logoimg logoimg" "imgdatos dt1 inicio" "imgdatos dt1 inicio" "rrss rrss rrss"; }
+    .footer .imgdatos {
+      grid-area: imgdatos;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap; }
+    .footer .logoimg {
+      grid-area: logoimg;
+      width: 100%;
+      height: auto; }
+      .footer .logoimg a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .footer .logoimg a img {
+          width: 60%; }
+    .footer .inicio {
+      grid-area: inicio;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start; }
+    .footer .rrss {
+      grid-area: rrss;
+      width: 100%;
+      height: auto;
+      align-items: center; }
+      .footer .rrss .imgRrss {
+        width: 50%;
+        text-align: center; }
+    .footer .dt1 {
+      grid-area: dt1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .footer .dt1 p {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: initial; }
+    .footer a {
+      text-decoration: none;
+      color: black; }
+    .footer .inicio li {
+      list-style: none;
+      margin-top: 30%;
+      text-align: center; }
+  /* FIN FOOTER */
+  /* INICIO HEADER */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .header .logoHeader {
+      width: 100%; }
+      .header .logoHeader a img {
+        width: 60%;
+        height: 150px;
+        text-align: center; }
+    .header .navbar {
+      width: 100%;
+      justify-content: center; }
+      .header .navbar p {
+        margin-right: 0; }
+      .header .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center; }
+        .header .navbar .nav-links li:hover {
+          transform: scale(1.1);
+          color: #f300c6; }
+      .header .navbar .libar {
+        list-style: none;
+        padding: 15px 5px; }
+      .header .navbar a {
+        color: black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold; }
+  /* FIN HEADER */
+  /* INICIO DIGITAL */
+  .gridPadre .dig {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "imgDig" "digTxt" "ds" "car"; }
+    .gridPadre .dig .imgDig {
+      width: 100%;
+      grid-area: imgDig; }
+      .gridPadre .dig .imgDig img {
+        width: 100%;
+        height: auto; }
+    .gridPadre .dig .digTxt {
+      grid-area: digTxt; }
+    .gridPadre .dig .ds {
+      grid-area: ds; }
+      .gridPadre .dig .ds h3 {
+        text-align: center; }
+      .gridPadre .dig .ds ul {
+        text-align: center; }
+    .gridPadre .dig .car {
+      grid-area: car; }
+      .gridPadre .dig .car h3 {
+        text-align: center; }
+      .gridPadre .dig .car ul {
+        text-align: center; }
+  /* FIN DIGITAL */ }
 
 .dig {
+  padding: 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -409,7 +362,8 @@ a {
 .ds h3 {
   font-size: 25px;
   margin: 10px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .ds p {
   font-size: 17px; }
@@ -420,62 +374,7 @@ a {
 .car h3 {
   font-size: 25px;
   margin: 10px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
   .car h3 p {
     font-size: 17px; }
-
-.sub {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  grid-area: sub; }
-
-.telasub {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  grid-area: telasub;
-  align-content: center;
-  align-items: center; }
-
-.sub1 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "sub sub" "sub sub" "telasub telasub" "telasub telasub"; }
-
-.sub p {
-  width: 80%; }
-
-.sub h1, .sub h2 {
-  margin: 10px;
-  width: 80%; }
-
-.telasub li, .telasub .ts {
-  margin: 10px; }
-
-.bgImg {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/fondocont.png);
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-.for {
-  width: 50%; }
-
-.pf {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0; }
-
-.pf1 {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif; }
-
-textarea {
-  resize: none;
-  overflow: auto; }

@@ -1,4 +1,5 @@
 .dig {
+    padding: 5%;
     overflow: hidden;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -41,6 +42,7 @@
     font-size: 25px;
     margin: 10px;
     font-weight: bold;
+    text-align: center;
 }
 }
 .ds p{
@@ -52,6 +54,7 @@
     font-size: 25px;
     margin: map-get($fontSize , size1 );
     font-weight: bold;
+    text-align: center;
     p{
     font-size: 17px;
     }
