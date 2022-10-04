@@ -1,0 +1,50 @@
+.imgCentral {
+    width: map-get($fontSizePor , size10 );
+    height: 1490px;
+    background-image: url("../assets/img/PWfondo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    grid-area: inipag;
+}
+.imgCentral .inicio {
+    color: white;
+    font-size: map-get($fontSize , size5 );
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: map-get($fontSizePor , size10 );
+    text-align: center;
+    margin-top: 0;
+    display: block;
+}
+.medio {
+    color: black;
+    font-size: map-get($fontSize , size7 );
+    font-family: Britannic;
+    font-weight: bold;
+    width: map-get($fontSizePor , size10 );
+    text-align: center;
+    height: map-get($fontSizePor , size3 );
+}
+.textoDig{
+    @extend .textoDig;
+    width: 32%;
+    height: auto;
+    margin: map-get($fontSize, size1 );
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.finIndex{
+    @extend .finIndex;
+}
+.cardImg{
+    width: map-get($fontSizePor , size10 );
+    height: auto;
+}
+.h5font{
+    font-size: 20px;
+    font-weight: bold;
+}
