@@ -31,7 +31,7 @@
 .textoDig{
     @extend .textoDig;
     width: 32%;
-    height: auto;
+    height: 100%;
     margin: map-get($fontSize, size1 );
     padding: 5px;
     border: 1px solid rgba(0,0,0,.125);
@@ -47,4 +47,6 @@
 .h5font{
     font-size: 20px;
     font-weight: bold;
+    margin-top: map-get($fontSize, size1 );
+    margin-bottom: map-get($fontSize, size1 );
 }
