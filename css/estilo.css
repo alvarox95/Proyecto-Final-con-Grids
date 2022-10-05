@@ -4,7 +4,7 @@
   font-weight: bold;
   text-align: center; }
 
-.textoDig, .digTxt {
+.textoDig {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,6 +15,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+
+.h3Ex, .hcard {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #2e2e2e; }
 
 .header {
   display: flex;
@@ -249,7 +255,7 @@ ul {
   text-align: center;
   height: 30%; }
 
-.textoDig, .digTxt {
+.textoDig {
   width: 32%;
   height: auto;
   margin: 10px;
@@ -402,51 +408,51 @@ ul {
   /* FIN INDEX */ }
 
 .dig {
-  padding: 5%;
+  padding: 2%;
   overflow: hidden;
   display: grid;
+  grid-area: inipag;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "img img" "digTxt digTxt" "ds car"; }
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "eDig eDig" "imgDig digTxt" "imgDig ds" "imgDig car"; }
 
 .imgDig {
   width: 100%;
   height: auto;
-  grid-area: img; }
-
-.imgDig img {
-  width: 100%;
-  height: 700px; }
+  grid-area: imgDig; }
+  .imgDig img {
+    width: 100%;
+    height: 700px; }
 
 .digTxt {
   width: 100%;
-  grid-area: digTxt; }
-  .digTxt h1 {
-    font-size: 40px;
-    font-weight: bold; }
-  .digTxt p {
-    margin: 10px; }
+  margin-bottom: 20px;
+  grid-area: digTxt;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
 
-.digTxt .ds {
+.ds {
   width: 100%;
-  grid-area: ds; }
-
-.ds h3 {
-  font-size: 25px;
-  margin: 10px;
-  font-weight: bold;
-  text-align: center; }
-
-.ds p {
-  font-size: 17px; }
+  margin-bottom: 20px;
+  grid-area: ds;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
 
 .car {
-  grid-area: car; }
+  grid-area: car;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
 
-.car h3 {
-  font-size: 25px;
-  margin: 10px;
-  font-weight: bold;
-  text-align: center; }
-  .car h3 p {
-    font-size: 17px; }
+.eDig {
+  width: 100%;
+  height: auto;
+  grid-area: eDig;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #2e2e2e; }
+
+.textoP {
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 1%; }
+
+.hcard {
+  margin: 10px; }
