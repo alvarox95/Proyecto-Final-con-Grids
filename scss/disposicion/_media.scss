@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
 /* INICIO FOOTER */
-  .footer {
+.footer {
   display: grid;
   grid-template-columns: 19% 47% 33%;
   grid-template-rows: auto auto auto auto;
@@ -68,10 +68,10 @@ a{
   margin-top: 30%;
   text-align: center;
   }
-  }
+}
 /* FIN FOOTER */
 /* INICIO HEADER */
-  .header {
+.header {
   flex-direction: column;
   align-items: center;
   height: auto;
@@ -113,48 +113,55 @@ a{
           font-weight: bold;
       }
   }
-  }
+}
 /* FIN HEADER */
 /* INICIO DIGITAL */
-  .gridPadre{
-  .dig {
-      padding: 5%;
-      display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows: auto auto auto auto;
-          grid-template-areas:
-              "imgDig"
-              "digTxt"
-              "ds"
-              "car";
-      .imgDig { 
-          width: map-get($fontSizePor,size10);    
-          grid-area: imgDig;
-          img{
-              width: map-get($fontSizePor,size10);
-              height: auto;
-          }
-      }
-      .digTxt { grid-area: digTxt; }
-      
-      .ds { 
-          h3{
+.gridPadre{
+.dig {
+    padding: 5%;
+    display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "eDig"
+            "imgDig"
+            "digTxt"
+            "ds"
+            "car";
+    .imgDig { 
+        width: map-get($fontSizePor,size10);    
+        grid-area: imgDig;
+        img{
+            width: map-get($fontSizePor,size10);
+            height: auto;
+        }
+    }
+    .digTxt { grid-area: digTxt; }
+    .eDig{
+        h1{
+            width: map-get($fontSizePor, size10 );
+            height: auto;
+            font-size: map-get($fontSize, size5 );
+        }
+    }
+    .ds { 
+        h3{
               text-align: center;
-          }
-          ul{
+        }
+        ul{
               text-align: center;
-          }
-          grid-area: ds; }        
-      .car {
-          h3{
+        }
+        grid-area: ds; }        
+    .car {
+        h3{
               text-align: center;
-          }
-          ul{
+        }
+        ul{
               text-align: center;
-          }
-          grid-area: car; }
-      }
-  }
+        }
+        grid-area: car; }
+    }
+}
 /* FIN DIGITAL */
 /* INICIO INDEX */
 .imgCentral .inicio {

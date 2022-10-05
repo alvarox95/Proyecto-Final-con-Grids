@@ -366,8 +366,8 @@ ul {
     padding: 5%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "imgDig" "digTxt" "ds" "car"; }
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "eDig" "imgDig" "digTxt" "ds" "car"; }
     .gridPadre .dig .imgDig {
       width: 100%;
       grid-area: imgDig; }
@@ -376,6 +376,10 @@ ul {
         height: auto; }
     .gridPadre .dig .digTxt {
       grid-area: digTxt; }
+    .gridPadre .dig .eDig h1 {
+      width: 100%;
+      height: auto;
+      font-size: 50px; }
     .gridPadre .dig .ds {
       grid-area: ds; }
       .gridPadre .dig .ds h3 {
